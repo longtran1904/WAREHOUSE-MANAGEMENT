@@ -74,6 +74,7 @@ public class ProductManager extends JPanel {
                 String product = productField.getText().trim();
                 product = Capitalize.set(product);
                 String amount = amountField.getText().trim();
+                if (amount.isEmpty()) amount = "1";
                 String des = desField.getText().trim();
 
                 productField.setText("");
